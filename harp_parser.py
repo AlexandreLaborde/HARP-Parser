@@ -64,13 +64,13 @@ class HarpParser():
     Parser for the HARP (HArdware Research Platform) data format.
 
     Author: Alexandre Laborde
-    Version: 1.0
-    Date: October 28, 2024
+    Version: 1.0.1
+    Date: November 5, 2024
     """
 
     HAS_TIMESTAMP = 0x10
     SIZE_MASK = 0x0F
-    MICROSECOND_TO_SECOND = 32 * 10e-6
+    MICROSECOND_TO_SECOND = 32e-6
     NAN = float('nan')
 
     def __init__(self):
